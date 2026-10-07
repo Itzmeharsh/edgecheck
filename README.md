@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ EdgeCheck
 
-## Getting Started
+### Think you're on the edge of trading? **EdgeCheck yourself.**
 
-First, run the development server:
+> An AI-powered trading strategy analysis platform that turns natural-language trading ideas into structured strategies and evaluates them against real market data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <img src="public/edgecheck-logo.png" alt="EdgeCheck" width="220" />
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <strong>Real Market Data • AI Strategy Analysis • Interactive Charts • Secure BYOK AI</strong>
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#how-it-works">How It Works</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#security">Security</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#roadmap">Roadmap</a>
+</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 What is EdgeCheck?
 
-To learn more about Next.js, take a look at the following resources:
+EdgeCheck is an AI-powered trading strategy analysis platform designed to help traders evaluate their strategies against **real market conditions**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Instead of simply asking an AI:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> "Should I buy this?"
 
-## Deploy on Vercel
+EdgeCheck allows users to define their own trading strategy in natural language.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For example:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> **"Mark the trendline and if the trendline breaks, wait for confirmation and a pullback to the trendline before entering."**
+
+EdgeCheck converts that idea into structured trading rules and evaluates the strategy against real market data.
+
+The goal is not to generate trading signals blindly.
+
+The goal is to help traders **check whether their own strategy is actually present in the current market setup.**
+
+---
+
+# ✨ Features
+
+## 📈 Real Market Charts
+
+EdgeCheck uses real market data instead of generated or simulated candles.
+
+Supported markets currently include:
+
+- NIFTY 50
+- NIFTY BANK
+- SENSEX
+- NIFTY FIN SERVICE
+- NIFTY MID SELECT
+- INDIA VIX
+
+Supported timeframes:
+
+- 5 minutes
+- 15 minutes
+- 1 hour
+- 1 day
+
+Market data is retrieved server-side and rendered using **Lightweight Charts**.
+
+---
+
+## 🧠 AI-Powered Strategy Understanding
+
+Users can describe their strategy naturally.
+
+Example:
+
+```text
+If price breaks the trendline,
+wait for confirmation,
+then wait for a pullback to the trendline
+before entering.
