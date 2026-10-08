@@ -748,9 +748,18 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-xs text-[#9FB3C8]">
-            © {new Date().getFullYear()} EdgeCheck
-          </p>
+          <div className="flex items-center gap-5">
+  <Link
+    href="/privacy"
+    className="text-xs text-[#78919A] transition-colors hover:text-[#1597D4]"
+  >
+    Privacy Policy
+  </Link>
+
+  <p className="text-xs text-[#9FB3C8]">
+    © {new Date().getFullYear()} EdgeCheck
+  </p>
+</div>
         </div>
       </footer>
     </main>

@@ -126,11 +126,11 @@ export default function ProfileDropdown({
             </Link>
 
             {/* Privacy Policy */}
-            <Link
-              href="/privacy-policy"
-              onClick={() => setOpen(false)}
-              className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-[#48636c] transition hover:bg-[#f1f8fa] hover:text-[#173944]"
-            >
+           <Link
+  href="/privacy"
+  onClick={() => setOpen(false)}
+  className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-[#48636c] transition hover:bg-[#f1f8fa] hover:text-[#173944]"
+>
               <Shield
                 size={17}
                 className="text-[#78919a]"
